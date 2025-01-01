@@ -18,6 +18,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route:: get('/about', function(){
+    return view('about');
+});
+
+Route:: get('/contact', function(){
+    return view('contact');
+});
+
+// ___________ignore It_________//
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
